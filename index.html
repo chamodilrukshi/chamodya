@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chamodya Dilrukshi - Passionate about Space and Astronomy">
+    <title>Chamodya Dilrukshi - Space Enthusiast</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Custom Gradient Background */
+        .gradient-bg {
+            background: linear-gradient(135deg, rgba(29, 53, 87, 0.8), rgba(63, 94, 251, 0.8));
+        }
+    </style>
+</head>
+
+<body class="gradient-bg text-white font-sans">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full py-4 px-8 z-10 bg-transparent">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold">Chamodya Dilrukshi</div>
+            <div class="space-x-6 text-lg">
+                <a href="#home" class="hover:underline">Home</a>
+                <a href="#about" class="hover:underline">About</a>
+                <a href="#contact" class="hover:underline">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="flex items-center justify-center h-screen text-center space-y-6">
+        <div class="space-y-4">
+            <h1 class="text-5xl md:text-6xl font-extrabold">Exploring the Universe, One Star at a Time</h1>
+            <p class="text-xl md:text-2xl">Hi, I’m Chamodya Dilrukshi, a passionate space enthusiast fascinated by stars, galaxies, and the mysteries of the cosmos.</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-300" onclick="scrollToSection('about')">
+                Learn More About Me
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">About Me</h2>
+            <p class="text-lg">I am a space enthusiast with a passion for astronomy, stargazing, and discovering new things about the universe. I’m constantly learning and exploring the wonders of space. Join me on this cosmic journey!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Contact Me</h2>
+            <p class="text-lg">Feel free to reach out to me if you share the same interest in space, astronomy, or want to talk about the stars!</p>
+            <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition duration-300">
+                Get in Touch
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-4 text-center text-sm">
+        <p>&copy; 2025 Chamodya Dilrukshi. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Smooth Scroll Functionality -->
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    </script>
+
+</body>
+
+</html>
